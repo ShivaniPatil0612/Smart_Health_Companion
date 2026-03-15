@@ -75,12 +75,7 @@
     <scope>runtime</scope>
 </dependency>
 
-    <!-- H2 (Optional - only if needed) -->
-    <dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-    <scope>runtime</scope>
-</dependency>
+   
 
 </dependencies>
 
