@@ -107,11 +107,6 @@ select * from blogs;
 
 describe articles;
 
-UPDATE users
-SET password = '$2a$10$EZu1u3kL9ZS3YbHfchJFAuK5ivuXzwZEBi8pZ/WXkujFMO3C2.YiK'
-WHERE email = 'shivanikpatil126@gmail.com';
-
-ALTER TABLE mental_wellness RENAME COLUMN  meditation_time TO notes;
 
 describe otp_codes;
 select * from otp_codes;
