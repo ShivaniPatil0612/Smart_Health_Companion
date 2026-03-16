@@ -3,16 +3,15 @@
 # ===============================
 FROM maven:3.9.9-eclipse-temurin-21 AS build
 
-# Set working directory
 WORKDIR /app
 
-# Copy only POM first to download dependencies
+# Copy only POM first to cache dependencies
 COPY pom.xml .
 
 # Pre-download dependencies (avoids missing artifact errors)
 RUN mvn dependency:go-offline -B
 
-# Copy full source code
+# Copy source code
 COPY src ./src
 
 # Build the Spring Boot app
@@ -23,17 +22,16 @@ RUN mvn clean package -DskipTests -B
 # ===============================
 FROM eclipse-temurin:21-jre-alpine
 
-# Set working directory
 WORKDIR /app
 
-# Copy the built jar from the build stage
+# Copy the built jar
 COPY --from=build /app/target/wellness-backend-0.0.1-SNAPSHOT.jar .
 
-# Expose the default Spring Boot port
+# Expose Spring Boot default port
 EXPOSE 8080
 
-# Environment variable for optional JWT secret (can be added in Render dashboard)
+# Optional: JWT secret
 ENV JWT_SECRET=replace_with_your_secret
 
-# Run the Spring Boot application
+# Run Spring Boot
 CMD ["java","-jar","wellness-backend-0.0.1-SNAPSHOT.jar"]
