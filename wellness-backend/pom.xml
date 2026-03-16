@@ -40,7 +40,7 @@
  <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
-    <version>8.1.0</version> <!-- <- Add this line -->
+     <version>8.0.33</version> <!-- stable version -->
     <scope>runtime</scope>
 </dependency>
 
