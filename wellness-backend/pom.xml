@@ -37,9 +37,10 @@
     </dependency>
     
     <!-- MySQL -->
-   <dependency>
+ <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
+    <version>8.1.0</version> <!-- <- Add this line -->
     <scope>runtime</scope>
 </dependency>
 
