@@ -58,6 +58,7 @@ JWT_SECRET=your_secret_key
 
 SPRING_MAIL_USERNAME=your_email
 SPRING_MAIL_PASSWORD=your_email_password
+
 🐳 Docker Setup
 
 Build and run the backend using Docker:
