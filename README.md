@@ -78,12 +78,7 @@ npm start
 Backend deployed on Render using Docker
 Database hosted on Railway
 Environment variables configured securely in deployment platform
-🎯 Future Improvements
-Progress tracking dashboard (charts & analytics)
-Appointment booking with trainers
-Mobile responsiveness enhancement
-Notifications & reminders
-AI-based health recommendations
+
 
 📄 **License**
              This project is open-source and available under the MIT License.
