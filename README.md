@@ -72,22 +72,6 @@ Frontend (React)
 npm install
 npm start
 
-📊 **Project Structure**
-wellness-project/
-│
-├── backend/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── entity/
-│   └── config/
-│
-├── frontend/
-│   ├── pages/
-│   ├── components/
-│   └── services/
-│
-└── Dockerfile
 
 🌍** Deployment**
 Backend deployed on Render using Docker
@@ -101,7 +85,7 @@ Notifications & reminders
 AI-based health recommendations
 
 📄 **License**
-This project is open-source and available under the MIT License.
+             This project is open-source and available under the MIT License.
 
 👩‍💻 **Author**
 
